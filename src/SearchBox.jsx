@@ -1,10 +1,11 @@
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useState } from 'react';
+import { api_KEY } from '../config';
 
 export default function SearchBox({updateInfo}) {
     const API_URL = "http://api.openweathermap.org//data/2.5/weather";
-    const API_KEY = "3060423f04236b39e238c973f3d692b5";
+    const API_KEY = api_KEY;
 
     let[formData, SetFormData]=useState({
         city:"",
